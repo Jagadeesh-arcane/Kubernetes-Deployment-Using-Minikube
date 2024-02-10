@@ -1,0 +1,33 @@
+Project Overview:
+
+Objective:
+The objective of this project is to demonstrate the setup and deployment of a sample application using Kubernetes and Minikube for local development and testing purposes.
+
+Technologies Used:
+Kubernetes: An open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications.
+Minikube: A tool that allows you to run Kubernetes clusters locally.
+Docker: A containerization platform used to package applications and their dependencies into containers.
+
+Project Steps:
+Install Minikube: Start by installing Minikube on your local development machine. Minikube provides a single-node Kubernetes cluster that runs locally.
+
+Start Minikube: Once Minikube is installed, start the Minikube cluster using the appropriate commands based on your operating system.
+
+Verify Minikube: After starting Minikube, ensure that the cluster is up and running by executing commands like minikube status or kubectl cluster-info.
+
+Deploy Sample Application: Choose a sample application to deploy on the Minikube cluster. This could be a simple web application, a microservice, or any other containerized application. Ensure that the application is packaged as a Docker container.
+
+Create Kubernetes Manifests: Write Kubernetes manifests (YAML files) to define the deployment, service, and any other resources required by your application. These manifests describe how Kubernetes should deploy and manage your application.
+
+Apply Manifests: Use the kubectl apply command to apply the Kubernetes manifests to the Minikube cluster. This will create the necessary resources (pods, services, etc.) to run your application.
+
+Verify Deployment: Once the manifests are applied, verify that your application is running correctly on the Minikube cluster. Use commands like kubectl get pods, kubectl get services, and kubectl logs to inspect the state of your application.
+
+Test Application: Test your application to ensure that it behaves as expected within the Kubernetes environment. Access the application through the Minikube IP address and port.
+
+Scale Application (Optional): Experiment with scaling your application by adjusting the replica count in the deployment manifest and observing how Kubernetes automatically manages the additional replicas.
+
+Cleanup: Once you're done testing, clean up the resources by deleting the Kubernetes deployment and any associated resources using kubectl delete.
+
+Conclusion:
+This project demonstrates the basic steps involved in deploying a sample application using Kubernetes and Minikube. It provides hands-on experience with Kubernetes concepts such as deployments, services, and pods, as well as familiarity with Minikube for local development and testing.
